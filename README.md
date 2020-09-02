@@ -1,3 +1,3 @@
 # Jekyll for mainstringargs portfolio
 
-See:  https://mainstringargs.github.io/
+See:  https://mainstringargs.github.io/myshelf
