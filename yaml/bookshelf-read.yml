@@ -180,3 +180,10 @@
   amazon-rating: 4.3
   image: the_new_new_thing.jpg
   release-date: October 17, 1999
+- title: The Quants
+  author: Scott Patterson
+  link: https://www.amazon.com/Quants-Whizzes-Conquered-Street-Destroyed/dp/0307453383
+  description:  With the immediacy of today’s NASDAQ close and the timeless power of a Greek tragedy, The Quants is at once a masterpiece of explanatory journalism, a gripping tale of ambition and hubris, and an ominous warning about Wall Street’s future. 
+  amazon-rating: 4.3
+  image: the_quants.jpg
+  release-date: January 25, 2011
