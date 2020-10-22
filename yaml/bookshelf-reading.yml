@@ -5,3 +5,10 @@
   amazon-rating: 4.5
   image: hands_on_microservices_with_spring_boot_and_spring_cloud.jpg
   release-date: September 20, 2019
+- title: Naked Statistics
+  author: Charles Wheelan
+  link: https://www.amazon.com/Naked-Statistics-Stripping-Dread-Data/dp/039334777X/ref=sr_1_1?crid=3IDLC70KRFCTX&dchild=1&keywords=naked+statistics&qid=1603374083&sprefix=naked+statist%2Caps%2C183&sr=8-1
+  description:  Once considered tedious, the field of statistics is rapidly evolving into a discipline Hal Varian, chief economist at Google, has actually called sexy. From batting averages and political polls to game shows and medical research, the real-world application of statistics continues to grow by leaps and bounds
+  amazon-rating: 4.6
+  image: naked_statistics.jpg
+  release-date: January 13, 2014
