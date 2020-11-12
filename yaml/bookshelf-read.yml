@@ -8,7 +8,7 @@
 - title: Peopleware
   author: Tom DeMarco
   link: https://www.amazon.com/Peopleware-Productive-Projects-Teams-3rd/dp/0321934113/ref=as_li_ss_tl?keywords=peopleware&qid=1561402033&s=books&sr=1-2&linkCode=ll1&tag=mainstringarg-20&linkId=add77a7cfad9567ea7af60e527297f61&language=en_US
-  description: The major issues of software development are human, not technical. They’re not easy issues; but solve them, and you’ll maximize your chances of success.
+  description: The major issues of software development are human, not technical. They are not easy issues; but solve them, and you’ll maximize your chances of success.
   amazon-rating: 4.6
   image: peopleware.jpg
   release-date: June 28, 2013
