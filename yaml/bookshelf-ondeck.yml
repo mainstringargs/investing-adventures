@@ -96,3 +96,10 @@
   amazon-rating: 4.8
   image: bad_blood.jpg
   release-date: May 21, 2018
+- title: Hands-On Microservices with Spring Boot and Spring Cloud
+  author: Magnus Larsson
+  link: https://www.amazon.com/Hands-Microservices-Spring-Boot-Cloud-dp-1789613477/dp/1789613477/ref=mt_paperback?_encoding=UTF8&me=&qid=
+  description:  Microservices architecture allows developers to build and maintain applications with ease, and enterprises are rapidly adopting it to build software using Spring Boot as their default framework. With this book, you'll learn how to efficiently build and deploy microservices using Spring Boot.
+  amazon-rating: 4.5
+  image: hands_on_microservices_with_spring_boot_and_spring_cloud.jpg
+  release-date: September 20, 2019
