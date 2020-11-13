@@ -1,10 +1,3 @@
-- title: Hands-On Microservices with Spring Boot and Spring Cloud
-  author: Magnus Larsson
-  link: https://www.amazon.com/Hands-Microservices-Spring-Boot-Cloud-dp-1789613477/dp/1789613477/ref=mt_paperback?_encoding=UTF8&me=&qid=
-  description:  Microservices architecture allows developers to build and maintain applications with ease, and enterprises are rapidly adopting it to build software using Spring Boot as their default framework. With this book, you'll learn how to efficiently build and deploy microservices using Spring Boot.
-  amazon-rating: 4.5
-  image: hands_on_microservices_with_spring_boot_and_spring_cloud.jpg
-  release-date: September 20, 2019
 - title: The Clean Coder
   author: Robert C. Martin
   link: https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073/ref=as_li_ss_tl?crid=9YJ9X71LWCXD&keywords=clean+architecture&qid=1564690296&s=gateway&sprefix=clean+arh,aps,155&sr=8-4&linkCode=ll1&tag=mainstringarg-20&linkId=cd98bbe94682a01daca2dcb8852cf52e&language=en_US
