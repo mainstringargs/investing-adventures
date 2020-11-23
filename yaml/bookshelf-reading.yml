@@ -5,10 +5,10 @@
   image: the_clean_coder.jpg
   amazon-rating: 4.3
   release-date: May 23, 2011
-- title: The Man Who Solved The Market
-  author: Gregory Zuckerman
-  link: https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X
-  description:  The unbelievable story of a secretive mathematician who pioneered the era of the algorithm--and made $23 billion doing it.
-  image: the_man_who_solved_the_market.jpg
-  amazon-rating: 4.5
-  release-date: November 5, 2019
+- title: Lab Rats
+  author: Dan Lyons
+  link: https://www.amazon.com/Lab-Rats-Silicon-Valley-Miserable/dp/031656186X
+  description: At a time of soaring corporate profits and plenty of HR lip service about wellness, millions of workers--in virtually every industry -- are deeply unhappy. Why did work become so miserable? Who is responsible? And does any company have a model for doing it right?
+  image: lab_rats.jpg
+  amazon-rating: 4.3
+  release-date: October 23, 2018
