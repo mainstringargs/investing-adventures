@@ -103,3 +103,11 @@
   amazon-rating: 4.5
   image: hands_on_microservices_with_spring_boot_and_spring_cloud.jpg
   release-date: September 20, 2019
+- title: The Man Who Solved The Market
+  author: Gregory Zuckerman
+  link: https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X
+  description:  The unbelievable story of a secretive mathematician who pioneered the era of the algorithm--and made $23 billion doing it.
+  image: the_man_who_solved_the_market.jpg
+  amazon-rating: 4.5
+  release-date: November 5, 2019
+
