@@ -201,3 +201,10 @@
   amazon-rating: 4.0
   image: 97_things_every_programmer_should_know.jpg
   release-date: March 2, 2010
+- title: Lab Rats
+  author: Dan Lyons
+  link: https://www.amazon.com/Lab-Rats-Silicon-Valley-Miserable/dp/031656186X
+  description: At a time of soaring corporate profits and plenty of HR lip service about wellness, millions of workers--in virtually every industry -- are deeply unhappy. Why did work become so miserable? Who is responsible? And does any company have a model for doing it right?
+  image: lab_rats.jpg
+  amazon-rating: 4.3
+  release-date: October 23, 2018
