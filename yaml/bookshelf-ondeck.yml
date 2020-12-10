@@ -110,4 +110,11 @@
   image: the_man_who_solved_the_market.jpg
   amazon-rating: 4.5
   release-date: November 5, 2019
+- title: Dark Pools
+  author: Scott Patterson
+  link: https://www.amazon.com/Dark-Pools-Machine-Traders-Rigging/dp/0307887189/ref=sr_1_1?dchild=1&keywords=dark+pools&qid=1607563590&s=books&sr=1-1
+  description: In the beginning was Josh Levine, an idealistic programming genius who dreamed of wresting control of the market from the big exchanges that, again and again, gave the giant institutions an advantage over the little guy.
+  image: dark_pools.jpg
+  amazon-rating: 4.6
+  release-date: June 25, 2013
 
