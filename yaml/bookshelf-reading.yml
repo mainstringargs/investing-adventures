@@ -5,10 +5,10 @@
   image: the_clean_coder.jpg
   amazon-rating: 4.3
   release-date: May 23, 2011
-- title: Flash Boys
-  author: Michael Lewis
-  link: https://www.amazon.com/Flash-Boys-Wall-Street-Revolt/dp/0393351599/ref=sr_1_1?dchild=1&keywords=flash+boys&qid=1607609997&s=books&sr=1-1
-  description: In this game-changing bestseller, a small group of Wall Street iconoclasts realize that the U.S. stock market has been rigged for the benefit of insiders.
-  image: flash_boys.jpg
-  amazon-rating: 4.5
-  release-date: March 23, 2015 
+- title: Working in Public
+  author: Nadia Eghbal
+  link: https://www.amazon.com/Working-Public-Making-Maintenance-Software/dp/0578675862
+  description: Open source software in which developers publish code that anyone can use has long served as a bellwether for other online behavior. In the late 1990s, it provided an optimistic model for public collaboration, but in the last 20 years it s shifted to solo operators who write and publish code that's consumed by millions.
+  image: working_in_public.jpg
+  amazon-rating: 4.7
+  release-date: August 4, 2020 
