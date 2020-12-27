@@ -222,3 +222,10 @@
   image: flash_boys.jpg
   amazon-rating: 4.5
   release-date: March 23, 2015 
+- title: Working in Public
+  author: Nadia Eghbal
+  link: https://www.amazon.com/Working-Public-Making-Maintenance-Software/dp/0578675862
+  description: Open source software in which developers publish code that anyone can use has long served as a bellwether for other online behavior. In the late 1990s, it provided an optimistic model for public collaboration, but in the last 20 years it s shifted to solo operators who write and publish code that's consumed by millions.
+  image: working_in_public.jpg
+  amazon-rating: 4.7
+  release-date: August 4, 2020 
