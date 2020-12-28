@@ -5,3 +5,10 @@
   image: the_clean_coder.jpg
   amazon-rating: 4.3
   release-date: May 23, 2011
+- title: 97 Things Every Java Programmer Should Know
+  author: Kevlin Henney & Trisha Gee
+  link: https://www.amazon.com/Things-Every-Java-Programmer-Should/dp/1491952695
+  description: If you want to push your Java skills to the next level, this book provides expert advice from Java leaders and practitioners. You’ll be encouraged to look at problems in new ways.
+  image: 97_things_every_java_programmer_should_know.jpg
+  amazon-rating: 3.7
+  release-date: July 14, 2020
