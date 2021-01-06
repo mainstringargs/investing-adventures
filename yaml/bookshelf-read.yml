@@ -236,3 +236,10 @@
   image: 97_things_every_java_programmer_should_know.jpg
   amazon-rating: 3.7
   release-date: July 14, 2020
+- title: The Clean Coder
+  author: Robert C. Martin
+  link: https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073/ref=as_li_ss_tl?crid=9YJ9X71LWCXD&keywords=clean+architecture&qid=1564690296&s=gateway&sprefix=clean+arh,aps,155&sr=8-4&linkCode=ll1&tag=mainstringarg-20&linkId=cd98bbe94682a01daca2dcb8852cf52e&language=en_US
+  description: Programmers who endure and succeed amidst swirling uncertainty and nonstop pressure share a common attribute - They care deeply about the practice of creating software. They treat it as a craft. They are professionals.
+  image: the_clean_coder.jpg
+  amazon-rating: 4.3
+  release-date: May 23, 2011
