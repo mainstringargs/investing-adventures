@@ -1,0 +1,1656 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Shelf</title>
+  <meta name="description" content="My Shelf">
+
+  <link rel="stylesheet" href="/myshelf/assets/css/main.css">
+</head>
+
+  <body>
+
+      <section id="bookshelf">
+        <div class="user-details">
+  <h1> My Shelf </h1>
+</div>
+
+<script>
+  const paddingLeft=15;
+  const gapSize = 10;
+  
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  //console.log(data);
+  //console.log(document.getElementById(data));
+  //console.log(document.getElementById(data).parentNode);
+  //var parent = document.getElementById(data).parentNode
+  ev.target.appendChild(document.getElementById(data).parentNode);
+}
+  
+</script>
+
+<div ondrop="drop(event)" ondragover="allowDrop(event)"  class="shelf read">
+  <ul  class="books clearfix">
+    
+    <li id="The_Clean_Coder" class="book">
+      <img id="img_The_Clean_Coder" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/the_clean_coder.jpg" alt="The Clean Coder">
+      <div class="back" onclick="" id="read_The_Clean_Coder">
+        <div class="p0">
+          <span class="score"><span id="rating_The_Clean_Coder"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_Clean_Coder");
+            var rating = 4.3;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.3 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The Clean Coder</dd>
+            <dt>Author:</dt>
+            <dd>Robert C. Martin</dd>
+            <dt>Released:</dt>
+            <dd>May 23, 2011</dd>
+          </dl>
+          <p class="description">
+            Programmers who endure and succeed amidst swirling uncertainty and nonstop pressure share a common attribute - They care deeply about...
+          </p>
+          <a href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073/ref=as_li_ss_tl?crid=9YJ9X71LWCXD&keywords=clean+architecture&qid=1564690296&s=gateway&sprefix=clean+arh,aps,155&sr=8-4&linkCode=ll1&tag=mainstringarg-20&linkId=cd98bbe94682a01daca2dcb8852cf52e&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="97_Things_Every_Java_Programmer_Should_Know" class="book">
+      <img id="img_97_Things_Every_Java_Programmer_Should_Know" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/97_things_every_java_programmer_should_know.jpg" alt="97 Things Every Java Programmer Should Know">
+      <div class="back" onclick="" id="read_97_Things_Every_Java_Programmer_Should_Know">
+        <div class="p0">
+          <span class="score"><span id="rating_97_Things_Every_Java_Programmer_Should_Know"></span></span>
+          <script>
+            var span = document.getElementById("rating_97_Things_Every_Java_Programmer_Should_Know");
+            var rating = 3.7;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=3.7 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>97 Things Every Java Programmer Should Know</dd>
+            <dt>Author:</dt>
+            <dd>Kevlin Henney & Trisha Gee</dd>
+            <dt>Released:</dt>
+            <dd>July 14, 2020</dd>
+          </dl>
+          <p class="description">
+            If you want to push your Java skills to the next level, this book provides expert advice from Java leaders...
+          </p>
+          <a href="https://www.amazon.com/Things-Every-Java-Programmer-Should/dp/1491952695" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Working_in_Public" class="book">
+      <img id="img_Working_in_Public" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/working_in_public.jpg" alt="Working in Public">
+      <div class="back" onclick="" id="read_Working_in_Public">
+        <div class="p0">
+          <span class="score"><span id="rating_Working_in_Public"></span></span>
+          <script>
+            var span = document.getElementById("rating_Working_in_Public");
+            var rating = 4.7;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.7 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Working in Public</dd>
+            <dt>Author:</dt>
+            <dd>Nadia Eghbal</dd>
+            <dt>Released:</dt>
+            <dd>August 4, 2020</dd>
+          </dl>
+          <p class="description">
+            Open source software in which developers publish code that anyone can use has long served as a bellwether for other...
+          </p>
+          <a href="https://www.amazon.com/Working-Public-Making-Maintenance-Software/dp/0578675862" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Flash_Boys" class="book">
+      <img id="img_Flash_Boys" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/flash_boys.jpg" alt="Flash Boys">
+      <div class="back" onclick="" id="read_Flash_Boys">
+        <div class="p0">
+          <span class="score"><span id="rating_Flash_Boys"></span></span>
+          <script>
+            var span = document.getElementById("rating_Flash_Boys");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Flash Boys</dd>
+            <dt>Author:</dt>
+            <dd>Michael Lewis</dd>
+            <dt>Released:</dt>
+            <dd>March 23, 2015</dd>
+          </dl>
+          <p class="description">
+            In this game-changing bestseller, a small group of Wall Street iconoclasts realize that the U.S. stock market has been rigged...
+          </p>
+          <a href="https://www.amazon.com/Flash-Boys-Wall-Street-Revolt/dp/0393351599/ref=sr_1_1?dchild=1&keywords=flash+boys&qid=1607609997&s=books&sr=1-1" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="No_Rules_Rules_-_Netflix_and_the_Culture_of_Reinvention" class="book">
+      <img id="img_No_Rules_Rules_-_Netflix_and_the_Culture_of_Reinvention" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/no_rules_rules.jpg" alt="No Rules Rules - Netflix and the Culture of Reinvention">
+      <div class="back" onclick="" id="read_No_Rules_Rules_-_Netflix_and_the_Culture_of_Reinvention">
+        <div class="p0">
+          <span class="score"><span id="rating_No_Rules_Rules_-_Netflix_and_the_Culture_of_Reinvention"></span></span>
+          <script>
+            var span = document.getElementById("rating_No_Rules_Rules_-_Netflix_and_the_Culture_of_Reinvention");
+            var rating = 4.6;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.6 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>No Rules Rules - Netflix and the Culture of Reinvention</dd>
+            <dt>Author:</dt>
+            <dd>Reed Hastings</dd>
+            <dt>Released:</dt>
+            <dd>September 8, 2020</dd>
+          </dl>
+          <p class="description">
+            There has never before been a company like Netflix. It has led...
+          </p>
+          <a href="https://www.amazon.com/No-Rules-Netflix-Culture-Reinvention/dp/1984877860" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Lab_Rats" class="book">
+      <img id="img_Lab_Rats" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/lab_rats.jpg" alt="Lab Rats">
+      <div class="back" onclick="" id="read_Lab_Rats">
+        <div class="p0">
+          <span class="score"><span id="rating_Lab_Rats"></span></span>
+          <script>
+            var span = document.getElementById("rating_Lab_Rats");
+            var rating = 4.3;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.3 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Lab Rats</dd>
+            <dt>Author:</dt>
+            <dd>Dan Lyons</dd>
+            <dt>Released:</dt>
+            <dd>October 23, 2018</dd>
+          </dl>
+          <p class="description">
+            At a time of soaring corporate profits and plenty of HR lip service about wellness, millions of workers--in virtually every...
+          </p>
+          <a href="https://www.amazon.com/Lab-Rats-Silicon-Valley-Miserable/dp/031656186X" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="97_Things_Every_Programmer_Should_Know" class="book">
+      <img id="img_97_Things_Every_Programmer_Should_Know" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/97_things_every_programmer_should_know.jpg" alt="97 Things Every Programmer Should Know">
+      <div class="back" onclick="" id="read_97_Things_Every_Programmer_Should_Know">
+        <div class="p0">
+          <span class="score"><span id="rating_97_Things_Every_Programmer_Should_Know"></span></span>
+          <script>
+            var span = document.getElementById("rating_97_Things_Every_Programmer_Should_Know");
+            var rating = 4.0;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.0 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>97 Things Every Programmer Should Know</dd>
+            <dt>Author:</dt>
+            <dd>Kevlin Henney</dd>
+            <dt>Released:</dt>
+            <dd>March 2, 2010</dd>
+          </dl>
+          <p class="description">
+            Tap into the wisdom of experts to learn what every programmer should know, no matter what language you use. With...
+          </p>
+          <a href="https://www.amazon.com/Things-Every-Programmer-Should-Know/dp/0596809484" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Naked_Statistics" class="book">
+      <img id="img_Naked_Statistics" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/naked_statistics.jpg" alt="Naked Statistics">
+      <div class="back" onclick="" id="read_Naked_Statistics">
+        <div class="p0">
+          <span class="score"><span id="rating_Naked_Statistics"></span></span>
+          <script>
+            var span = document.getElementById("rating_Naked_Statistics");
+            var rating = 4.6;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.6 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Naked Statistics</dd>
+            <dt>Author:</dt>
+            <dd>Charles Wheelan</dd>
+            <dt>Released:</dt>
+            <dd>January 13, 2014</dd>
+          </dl>
+          <p class="description">
+            Once considered tedious, the field of statistics is rapidly evolving into a discipline Hal Varian, chief economist at Google, has...
+          </p>
+          <a href="https://www.amazon.com/Naked-Statistics-Stripping-Dread-Data/dp/039334777X/ref=sr_1_1?crid=3IDLC70KRFCTX&dchild=1&keywords=naked+statistics&qid=1603374083&sprefix=naked+statist%2Caps%2C183&sr=8-1" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="The_Quants" class="book">
+      <img id="img_The_Quants" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/the_quants.jpg" alt="The Quants">
+      <div class="back" onclick="" id="read_The_Quants">
+        <div class="p0">
+          <span class="score"><span id="rating_The_Quants"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_Quants");
+            var rating = 4.3;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.3 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The Quants</dd>
+            <dt>Author:</dt>
+            <dd>Scott Patterson</dd>
+            <dt>Released:</dt>
+            <dd>January 25, 2011</dd>
+          </dl>
+          <p class="description">
+            With the immediacy of today’s NASDAQ close and the timeless power of a Greek tragedy, The Quants is at once...
+          </p>
+          <a href="https://www.amazon.com/Quants-Whizzes-Conquered-Street-Destroyed/dp/0307453383" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="The_New_New_Thing" class="book">
+      <img id="img_The_New_New_Thing" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/the_new_new_thing.jpg" alt="The New New Thing">
+      <div class="back" onclick="" id="read_The_New_New_Thing">
+        <div class="p0">
+          <span class="score"><span id="rating_The_New_New_Thing"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_New_New_Thing");
+            var rating = 4.3;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.3 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The New New Thing</dd>
+            <dt>Author:</dt>
+            <dd>Michael Lewis</dd>
+            <dt>Released:</dt>
+            <dd>October 17, 1999</dd>
+          </dl>
+          <p class="description">
+            In the weird glow of the dying millennium, Michael Lewis set out on a safari through Silicon Valley to find...
+          </p>
+          <a href="https://www.amazon.com/dp/0393347818/ref=reader_auth_dp" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="The_Innovators" class="book">
+      <img id="img_The_Innovators" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/the_innovators.jpg" alt="The Innovators">
+      <div class="back" onclick="" id="read_The_Innovators">
+        <div class="p0">
+          <span class="score"><span id="rating_The_Innovators"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_Innovators");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The Innovators</dd>
+            <dt>Author:</dt>
+            <dd>Walter Isaacson</dd>
+            <dt>Released:</dt>
+            <dd>October 7, 2014</dd>
+          </dl>
+          <p class="description">
+            The Innovators is a masterly saga of collaborative genius destined to be the standard history of the digital revolution—and an...
+          </p>
+          <a href="https://www.amazon.com/Innovators-Hackers-Geniuses-Created-Revolution-ebook/dp/B00JGAS65Q/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=90666c1027f8340593de990426030c4d&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="A_Philosophy_of_Software_Design" class="book">
+      <img id="img_A_Philosophy_of_Software_Design" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/a_philosophy_of_software_design.jpg" alt="A Philosophy of Software Design">
+      <div class="back" onclick="" id="read_A_Philosophy_of_Software_Design">
+        <div class="p0">
+          <span class="score"><span id="rating_A_Philosophy_of_Software_Design"></span></span>
+          <script>
+            var span = document.getElementById("rating_A_Philosophy_of_Software_Design");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>A Philosophy of Software Design</dd>
+            <dt>Author:</dt>
+            <dd>John Ousterhout</dd>
+            <dt>Released:</dt>
+            <dd>April 6, 2018</dd>
+          </dl>
+          <p class="description">
+            This book addresses the topic of software design -- how to decompose complex software systems into modules (such as classes...
+          </p>
+          <a href="https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Blink" class="book">
+      <img id="img_Blink" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/blink.jpg" alt="Blink">
+      <div class="back" onclick="" id="read_Blink">
+        <div class="p0">
+          <span class="score"><span id="rating_Blink"></span></span>
+          <script>
+            var span = document.getElementById("rating_Blink");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Blink</dd>
+            <dt>Author:</dt>
+            <dd>Malcom Gladwell</dd>
+            <dt>Released:</dt>
+            <dd>April 3, 2007</dd>
+          </dl>
+          <p class="description">
+            Blink is a book about how we think without thinking, about choices that seem to be made in an instant-in...
+          </p>
+          <a href="https://www.amazon.com/Blink-Power-Thinking-Without/dp/0316010669" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Flash_Crash" class="book">
+      <img id="img_Flash_Crash" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/flash_crash.jpg" alt="Flash Crash">
+      <div class="back" onclick="" id="read_Flash_Crash">
+        <div class="p0">
+          <span class="score"><span id="rating_Flash_Crash"></span></span>
+          <script>
+            var span = document.getElementById("rating_Flash_Crash");
+            var rating = 4.9;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.9 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Flash Crash</dd>
+            <dt>Author:</dt>
+            <dd>Liam Vaughan</dd>
+            <dt>Released:</dt>
+            <dd>May 12, 2020</dd>
+          </dl>
+          <p class="description">
+            On May 6, 2010, financial markets around the world tumbled simultaneously and without warning. In the span of 5 minutes,...
+          </p>
+          <a href="https://www.amazon.com/Flash-Crash-Trading-Manhunt-Mysterious/dp/0385543654" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Algorithms_To_Live_By" class="book">
+      <img id="img_Algorithms_To_Live_By" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/algorithms_to_live_by.jpg" alt="Algorithms To Live By">
+      <div class="back" onclick="" id="read_Algorithms_To_Live_By">
+        <div class="p0">
+          <span class="score"><span id="rating_Algorithms_To_Live_By"></span></span>
+          <script>
+            var span = document.getElementById("rating_Algorithms_To_Live_By");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Algorithms To Live By</dd>
+            <dt>Author:</dt>
+            <dd>Brian Christian & Tom Griffiths</dd>
+            <dt>Released:</dt>
+            <dd>April 19, 2016</dd>
+          </dl>
+          <p class="description">
+            A fascinating exploration of how insights from computer algorithms can be applied to our everyday lives, helping to solve common...
+          </p>
+          <a href="https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=7e5744bd4b352bd2f03d2a8880d89001&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Disrupted" class="book">
+      <img id="img_Disrupted" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/disrupted.jpg" alt="Disrupted">
+      <div class="back" onclick="" id="read_Disrupted">
+        <div class="p0">
+          <span class="score"><span id="rating_Disrupted"></span></span>
+          <script>
+            var span = document.getElementById("rating_Disrupted");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Disrupted</dd>
+            <dt>Author:</dt>
+            <dd>Dan Lyons</dd>
+            <dt>Released:</dt>
+            <dd>March 7, 2017</dd>
+          </dl>
+          <p class="description">
+            For twenty-five years Dan Lyons was a magazine writer at the top of his profession--until one Friday morning when he...
+          </p>
+          <a href="https://www.amazon.com/Disrupted-My-Misadventure-Start-Up-Bubble/dp/0316306096/ref=as_li_ss_tl?&hvadid=312151229432&hvpos=1o1&hvnetw=g&hvrand=16352764289075402977&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019555&hvtargid=pla-450280120709&psc=1&tag=&ref=&adgrpid=61316180639&hvpone=&hvptwo=&hvadid=312151229432&hvpos=1o1&hvnetw=g&hvrand=16352764289075402977&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019555&hvtargid=pla-450280120709&linkCode=ll1&tag=mainstringarg-20&linkId=dc2116bfbc641eb288c41397534427c1&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="The_Tipping_Point" class="book">
+      <img id="img_The_Tipping_Point" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/the_tipping_point.jpg" alt="The Tipping Point">
+      <div class="back" onclick="" id="read_The_Tipping_Point">
+        <div class="p0">
+          <span class="score"><span id="rating_The_Tipping_Point"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_Tipping_Point");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The Tipping Point</dd>
+            <dt>Author:</dt>
+            <dd>Malcolm Gladwell</dd>
+            <dt>Released:</dt>
+            <dd>January 7, 2002</dd>
+          </dl>
+          <p class="description">
+            The tipping point is that magic moment when an idea, trend, or social behavior crosses a threshold, tips, and spreads...
+          </p>
+          <a href="https://www.amazon.com/Tipping-Point-Little-Things-Difference/dp/0316346624/ref=nodl_" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="The_Problem_With_Software" class="book">
+      <img id="img_The_Problem_With_Software" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/the_problem_with_software.jpg" alt="The Problem With Software">
+      <div class="back" onclick="" id="read_The_Problem_With_Software">
+        <div class="p0">
+          <span class="score"><span id="rating_The_Problem_With_Software"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_Problem_With_Software");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The Problem With Software</dd>
+            <dt>Author:</dt>
+            <dd>Adam Barr</dd>
+            <dt>Released:</dt>
+            <dd>October 23, 2018</dd>
+          </dl>
+          <p class="description">
+            An industry insider explains why there is so much bad software―and why academia doesn't teach programmers what industry wants them...
+          </p>
+          <a href="https://www.amazon.com/gp/product/026203851X/ref=x_gr_w_bb_glide_sout?ie=UTF8&tag=x_gr_w_bb_glide_sout-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=026203851X&SubscriptionId=1MGPYB6YW3HWK55XCGG2" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="The_DevOps_Handbook" class="book">
+      <img id="img_The_DevOps_Handbook" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/the_devops_handbook.jpg" alt="The DevOps Handbook">
+      <div class="back" onclick="" id="read_The_DevOps_Handbook">
+        <div class="p0">
+          <span class="score"><span id="rating_The_DevOps_Handbook"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_DevOps_Handbook");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The DevOps Handbook</dd>
+            <dt>Author:</dt>
+            <dd>Gene Kim, Jez Humble & Patrick Debois</dd>
+            <dt>Released:</dt>
+            <dd>October 6, 2016</dd>
+          </dl>
+          <p class="description">
+            More than ever, the effective management of technology is critical for business competitiveness. For decades, technology leaders have struggled to...
+          </p>
+          <a href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=ba19b9398f4fd980ef6499750b3f9664&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Coders" class="book">
+      <img id="img_Coders" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/coders.jpg" alt="Coders">
+      <div class="back" onclick="" id="read_Coders">
+        <div class="p0">
+          <span class="score"><span id="rating_Coders"></span></span>
+          <script>
+            var span = document.getElementById("rating_Coders");
+            var rating = 3.9;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=3.9 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Coders</dd>
+            <dt>Author:</dt>
+            <dd>Clive Thompson</dd>
+            <dt>Released:</dt>
+            <dd>March 26, 2019</dd>
+          </dl>
+          <p class="description">
+            Facebook's algorithms shaping the news. Self-driving cars roaming the streets. Revolution on Twitter and romance on Tinder. We live in...
+          </p>
+          <a href="https://www.amazon.com/Coders-Making-Tribe-Remaking-World/dp/0735220565/ref=as_li_ss_tl?keywords=clean+coder&qid=1561475458&s=books&sr=1-9&linkCode=ll1&tag=mainstringarg-20&linkId=a9db45e07cc3097a593c63a3d4dc0d3c&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Superintelligence" class="book">
+      <img id="img_Superintelligence" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/superintelligence.jpg" alt="Superintelligence">
+      <div class="back" onclick="" id="read_Superintelligence">
+        <div class="p0">
+          <span class="score"><span id="rating_Superintelligence"></span></span>
+          <script>
+            var span = document.getElementById("rating_Superintelligence");
+            var rating = 4.0;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.0 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Superintelligence</dd>
+            <dt>Author:</dt>
+            <dd>Nick Bostrom</dd>
+            <dt>Released:</dt>
+            <dd>May 1, 2016</dd>
+          </dl>
+          <p class="description">
+            Superintelligence asks the questions -- What happens when machines surpass humans in general intelligence? Will artificial agents save or destroy...
+          </p>
+          <a href="https://www.amazon.com/Superintelligence-Dangers-Strategies-Nick-Bostrom/dp/0198739834/ref=as_li_ss_tl?keywords=superintelligence&qid=1563457881&s=books&sr=1-3&linkCode=ll1&tag=mainstringarg-20&linkId=9d037b536967b299ecda3ddbba6a54cb&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Tim_Cook" class="book">
+      <img id="img_Tim_Cook" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/tim_cook.jpg" alt="Tim Cook">
+      <div class="back" onclick="" id="read_Tim_Cook">
+        <div class="p0">
+          <span class="score"><span id="rating_Tim_Cook"></span></span>
+          <script>
+            var span = document.getElementById("rating_Tim_Cook");
+            var rating = 3.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=3.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Tim Cook</dd>
+            <dt>Author:</dt>
+            <dd>Leander Kahney</dd>
+            <dt>Released:</dt>
+            <dd>April 16, 2019</dd>
+          </dl>
+          <p class="description">
+            The death of Steve Jobs left a gaping void at one of the most innovative companies of all time. Jobs...
+          </p>
+          <a href="https://www.amazon.com/gp/product/B07FLVCT2J/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=mainstringarg-20&linkId=79ff592e9a03c9b88c38f6ff353526c6&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="A_Human's_Guide_to_Machine_Intelligence" class="book">
+      <img id="img_A_Human's_Guide_to_Machine_Intelligence" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/a_humans_guide_to_machine_intelligence.jpg" alt="A Human's Guide to Machine Intelligence">
+      <div class="back" onclick="" id="read_A_Human's_Guide_to_Machine_Intelligence">
+        <div class="p0">
+          <span class="score"><span id="rating_A_Human's_Guide_to_Machine_Intelligence"></span></span>
+          <script>
+            var span = document.getElementById("rating_A_Human's_Guide_to_Machine_Intelligence");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>A Human's Guide to Machine Intelligence</dd>
+            <dt>Author:</dt>
+            <dd>Kartik Hosanagar</dd>
+            <dt>Released:</dt>
+            <dd>March 12, 2019</dd>
+          </dl>
+          <p class="description">
+            A professor and entrepreneur examines how algorithms and AI are starting to run every aspect of our lives, and how...
+          </p>
+          <a href="https://www.amazon.com/gp/product/0525560882/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=mainstringarg-20&linkId=f30153da6fd914a2d14cd8c68767d738&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="How_Google_Works" class="book">
+      <img id="img_How_Google_Works" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/how_google_works.jpg" alt="How Google Works">
+      <div class="back" onclick="" id="read_How_Google_Works">
+        <div class="p0">
+          <span class="score"><span id="rating_How_Google_Works"></span></span>
+          <script>
+            var span = document.getElementById("rating_How_Google_Works");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>How Google Works</dd>
+            <dt>Author:</dt>
+            <dd>Eric Schmidt & Jon Rosenberg</dd>
+            <dt>Released:</dt>
+            <dd>March 21, 2017</dd>
+          </dl>
+          <p class="description">
+            Seasoned Google executives Eric Schmidt and Jonathan Rosenberg provide an insider's guide to Google.
+          </p>
+          <a href="https://www.amazon.com/How-Google-Works-Eric-Schmidt/dp/1455582328/ref=as_li_ss_tl?keywords=Google+book&qid=1561411964&s=books&sr=1-3&linkCode=ll1&tag=mainstringarg-20&linkId=3085c047f9bb40c1e1dc37dba6ce5aea&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Elon_Musk" class="book">
+      <img id="img_Elon_Musk" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/elon_musk.jpg" alt="Elon Musk">
+      <div class="back" onclick="" id="read_Elon_Musk">
+        <div class="p0">
+          <span class="score"><span id="rating_Elon_Musk"></span></span>
+          <script>
+            var span = document.getElementById("rating_Elon_Musk");
+            var rating = 4.7;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.7 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Elon Musk</dd>
+            <dt>Author:</dt>
+            <dd>Ashlee Vance</dd>
+            <dt>Released:</dt>
+            <dd>May 19, 2015</dd>
+          </dl>
+          <p class="description">
+            In the spirit of Steve Jobs and Moneyball, Elon Musk is both an illuminating and authorized look at the extraordinary...
+          </p>
+          <a href="https://www.amazon.com/Elon-Musk-SpaceX-Fantastic-Future/dp/0062469673/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=f1dc91fc0241a1fa01017424d4a66316&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Tribe_of_Mentors" class="book">
+      <img id="img_Tribe_of_Mentors" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/tribe_of_mentors.jpg" alt="Tribe of Mentors">
+      <div class="back" onclick="" id="read_Tribe_of_Mentors">
+        <div class="p0">
+          <span class="score"><span id="rating_Tribe_of_Mentors"></span></span>
+          <script>
+            var span = document.getElementById("rating_Tribe_of_Mentors");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Tribe of Mentors</dd>
+            <dt>Author:</dt>
+            <dd>Tim Ferriss</dd>
+            <dt>Released:</dt>
+            <dd>November 21, 2017</dd>
+          </dl>
+          <p class="description">
+            From iconic entrepreneurs to elite athletes, from artists to billionaire investors, their short profiles can help you answer life's most...
+          </p>
+          <a href="https://www.amazon.com/Tribe-Mentors-Short-Advice-World/dp/1328994961/ref=as_li_ss_tl?keywords=tribe+of+mentors&qid=1564690282&s=gateway&sr=8-3&linkCode=ll1&tag=mainstringarg-20&linkId=a1dc2ba97db64439eed1f703011dab59&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Effective_Java" class="book">
+      <img id="img_Effective_Java" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/effective_java.jpg" alt="Effective Java">
+      <div class="back" onclick="" id="read_Effective_Java">
+        <div class="p0">
+          <span class="score"><span id="rating_Effective_Java"></span></span>
+          <script>
+            var span = document.getElementById("rating_Effective_Java");
+            var rating = 4.8;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.8 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Effective Java</dd>
+            <dt>Author:</dt>
+            <dd>Joshua Bloch</dd>
+            <dt>Released:</dt>
+            <dd>January 6, 2018</dd>
+          </dl>
+          <p class="description">
+            The support in modern Java for multiple paradigms increases the need for specific best-practices advice, and this book delivers.
+          </p>
+          <a href="https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997/ref=as_li_ss_tl?keywords=effective+java&qid=1561402317&s=books&sr=1-3&linkCode=ll1&tag=mainstringarg-20&linkId=8f4c617f2f1e8dc66d8012a99c8a5a1f&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Developer_Hegemony" class="book">
+      <img id="img_Developer_Hegemony" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/developer_hegemony.jpg" alt="Developer Hegemony">
+      <div class="back" onclick="" id="read_Developer_Hegemony">
+        <div class="p0">
+          <span class="score"><span id="rating_Developer_Hegemony"></span></span>
+          <script>
+            var span = document.getElementById("rating_Developer_Hegemony");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Developer Hegemony</dd>
+            <dt>Author:</dt>
+            <dd>Erik Dietrich</dd>
+            <dt>Released:</dt>
+            <dd>April 26, 2017</dd>
+          </dl>
+          <p class="description">
+            A play-by-play of how to leave the corporate carnival and control your own destiny.
+          </p>
+          <a href="https://www.amazon.com/Developer-Hegemony-Erik-Dietrich/dp/0692866809/ref=as_li_ss_tl?crid=12WJL8YKN8ABZ&keywords=developer+hegemony&qid=1561402203&s=books&sprefix=develolper+he,stripbooks,156&sr=1-1&linkCode=ll1&tag=mainstringarg-20&linkId=65539079ce5c1d91743ee33be91803c1&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Tools_of_Titans" class="book">
+      <img id="img_Tools_of_Titans" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/tools_of_titans.jpg" alt="Tools of Titans">
+      <div class="back" onclick="" id="read_Tools_of_Titans">
+        <div class="p0">
+          <span class="score"><span id="rating_Tools_of_Titans"></span></span>
+          <script>
+            var span = document.getElementById("rating_Tools_of_Titans");
+            var rating = 4.6;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.6 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Tools of Titans</dd>
+            <dt>Author:</dt>
+            <dd>Tim Ferriss</dd>
+            <dt>Released:</dt>
+            <dd>December 6, 2016</dd>
+          </dl>
+          <p class="description">
+            This book contains the distilled tools, tactics, and ‘inside baseball’ you won’t find anywhere else. It also includes new tips...
+          </p>
+          <a href="https://www.amazon.com/Tools-Titans-Billionaires-World-Class-Performers/dp/1328683788/ref=as_li_ss_tl?keywords=Tools+of+Titans&qid=1564692438&s=books&sr=1-1&linkCode=ll1&tag=mainstringarg-20&linkId=45404cdf4635ee4319917d4afae20bde&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="The_Phoenix_Project" class="book">
+      <img id="img_The_Phoenix_Project" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/the_phoenix_project.jpg" alt="The Phoenix Project">
+      <div class="back" onclick="" id="read_The_Phoenix_Project">
+        <div class="p0">
+          <span class="score"><span id="rating_The_Phoenix_Project"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_Phoenix_Project");
+            var rating = 4.7;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.7 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The Phoenix Project</dd>
+            <dt>Author:</dt>
+            <dd>Gene Kim & Kevin Behr</dd>
+            <dt>Released:</dt>
+            <dd>January 10, 2013</dd>
+          </dl>
+          <p class="description">
+            In a fast-paced style, 3 luminaries of the DevOps movement deliver a story that anyone who works in IT will...
+          </p>
+          <a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=0580e1ad47e1c33af6d99334f95b1340&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Steve_Jobs" class="book">
+      <img id="img_Steve_Jobs" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/steve_jobs.jpg" alt="Steve Jobs">
+      <div class="back" onclick="" id="read_Steve_Jobs">
+        <div class="p0">
+          <span class="score"><span id="rating_Steve_Jobs"></span></span>
+          <script>
+            var span = document.getElementById("rating_Steve_Jobs");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Steve Jobs</dd>
+            <dt>Author:</dt>
+            <dd>Walter Isaacson</dd>
+            <dt>Released:</dt>
+            <dd>October 24, 2011</dd>
+          </dl>
+          <p class="description">
+            Based on more than forty interviews with Jobs conducted over two years - as well as interviews with more than...
+          </p>
+          <a href="https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537/ref=as_li_ss_tl?keywords=jobs&qid=1561473173&s=gateway&sr=8-8&linkCode=ll1&tag=mainstringarg-20&linkId=c2336045932ddf1d92894e9265ed93ac&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Fumbling_the_Future" class="book">
+      <img id="img_Fumbling_the_Future" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/fumbling_the_future.jpg" alt="Fumbling the Future">
+      <div class="back" onclick="" id="read_Fumbling_the_Future">
+        <div class="p0">
+          <span class="score"><span id="rating_Fumbling_the_Future"></span></span>
+          <script>
+            var span = document.getElementById("rating_Fumbling_the_Future");
+            var rating = 4.3;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.3 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Fumbling the Future</dd>
+            <dt>Author:</dt>
+            <dd>Douglas Smith & Robert Alexander</dd>
+            <dt>Released:</dt>
+            <dd>June 1, 1999</dd>
+          </dl>
+          <p class="description">
+            Tells how Xerox invented the technology of the fastest-growing products of recent times, then miscalculated the opportunity to fully exploit...
+          </p>
+          <a href="https://www.amazon.com/Fumbling-Future-Invented-Personal-Computer/dp/1583482660/ref=as_li_ss_tl?keywords=xerox+book&qid=1561412358&s=gateway&sr=8-2&linkCode=ll1&tag=mainstringarg-20&linkId=9d5738caa8cef611cc60800da317112e&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Without_Their_Permission" class="book">
+      <img id="img_Without_Their_Permission" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/without_their_permission.jpg" alt="Without Their Permission">
+      <div class="back" onclick="" id="read_Without_Their_Permission">
+        <div class="p0">
+          <span class="score"><span id="rating_Without_Their_Permission"></span></span>
+          <script>
+            var span = document.getElementById("rating_Without_Their_Permission");
+            var rating = 4.0;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.0 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Without Their Permission</dd>
+            <dt>Author:</dt>
+            <dd>Alexis Ohanian</dd>
+            <dt>Released:</dt>
+            <dd>October 1, 2013</dd>
+          </dl>
+          <p class="description">
+            Reddit co-founder enlightens how the internet can be harnessed to create new technologies, businesses, or charities, with results that can...
+          </p>
+          <a href="https://www.amazon.com/Without-Their-Permission-Century-Managed/dp/1455520020/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=dd8dd3455895b24b5ab640fef68fbbfb&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Peopleware" class="book">
+      <img id="img_Peopleware" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/peopleware.jpg" alt="Peopleware">
+      <div class="back" onclick="" id="read_Peopleware">
+        <div class="p0">
+          <span class="score"><span id="rating_Peopleware"></span></span>
+          <script>
+            var span = document.getElementById("rating_Peopleware");
+            var rating = 4.6;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.6 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Peopleware</dd>
+            <dt>Author:</dt>
+            <dd>Tom DeMarco</dd>
+            <dt>Released:</dt>
+            <dd>June 28, 2013</dd>
+          </dl>
+          <p class="description">
+            The major issues of software development are human, not technical. They are not easy issues; but solve them, and you’ll...
+          </p>
+          <a href="https://www.amazon.com/Peopleware-Productive-Projects-Teams-3rd/dp/0321934113/ref=as_li_ss_tl?keywords=peopleware&qid=1561402033&s=books&sr=1-2&linkCode=ll1&tag=mainstringarg-20&linkId=add77a7cfad9567ea7af60e527297f61&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Code_Complete" class="book">
+      <img id="img_Code_Complete" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/code_complete.jpg" alt="Code Complete">
+      <div class="back" onclick="" id="read_Code_Complete">
+        <div class="p0">
+          <span class="score"><span id="rating_Code_Complete"></span></span>
+          <script>
+            var span = document.getElementById("rating_Code_Complete");
+            var rating = 4.6;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.6 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Code Complete</dd>
+            <dt>Author:</dt>
+            <dd>Steve McConnell</dd>
+            <dt>Released:</dt>
+            <dd>June 19, 2004</dd>
+          </dl>
+          <p class="description">
+            Widely considered one of the best practical guides to programming, this book llustrates the art and science of software construction....
+          </p>
+          <a href="https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=fa6efb6aa9777ccbcb2a9da48fcc11e1&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+<div class="shelf reading" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <ul class="books clearfix">
+    
+    <li id="Grokking_Algorithms" class="book">
+      <img id="img_Grokking_Algorithms" draggable="true" ondragstart="drag(event)" class="front" src="/bookshelf-data/assets/img/grokking_algorithms.jpg" alt="Grokking Algorithms">
+      <div class="back" onclick="" id="reading_Grokking_Algorithms">
+        <div class="p0">
+          <span class="score"><span id="rating_Grokking_Algorithms"></span></span>
+          <script>
+            var span = document.getElementById("rating_Grokking_Algorithms");
+            var rating = 4.6;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.6 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Grokking Algorithms</dd>
+            <dt>Author:</dt>
+            <dd>Aditya Bhargava</dd>
+            <dt>Released:</dt>
+            <dd>May 1, 2016</dd>
+          </dl>
+          <p class="description">
+            Grokking Algorithms is a fully illustrated and friendly guide that teaches you how to apply common algorithms to the practical...
+          </p>
+          <a href="https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="The_Man_Who_Solved_The_Market" class="book">
+      <img id="img_The_Man_Who_Solved_The_Market" draggable="true" ondragstart="drag(event)" class="front" src="/bookshelf-data/assets/img/the_man_who_solved_the_market.jpg" alt="The Man Who Solved The Market">
+      <div class="back" onclick="" id="reading_The_Man_Who_Solved_The_Market">
+        <div class="p0">
+          <span class="score"><span id="rating_The_Man_Who_Solved_The_Market"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_Man_Who_Solved_The_Market");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The Man Who Solved The Market</dd>
+            <dt>Author:</dt>
+            <dd>Gregory Zuckerman</dd>
+            <dt>Released:</dt>
+            <dd>November 5, 2019</dd>
+          </dl>
+          <p class="description">
+            The unbelievable story of a secretive mathematician who pioneered the era of the algorithm & made $23 billion doing it....
+          </p>
+          <a href="https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+
+<div class="shelf ondeck" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <ul class="books clearfix">
+    
+    <li id="Dark_Pools" class="book">
+      <img id="img_Dark_Pools" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/dark_pools.jpg" alt="Dark Pools">
+      <div class="back" onclick="" id="ondeck_Dark_Pools">
+        <div class="p0">
+          <span class="score"><span id="rating_Dark_Pools"></span></span>
+          <script>
+            var span = document.getElementById("rating_Dark_Pools");
+            var rating = 4.6;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.6 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Dark Pools</dd>
+            <dt>Author:</dt>
+            <dd>Scott Patterson</dd>
+            <dt>Released:</dt>
+            <dd>June 25, 2013</dd>
+          </dl>
+          <p class="description">
+            In the beginning was Josh Levine, an idealistic programming genius who dreamed of wresting control of the market from the...
+          </p>
+          <a href="https://www.amazon.com/Dark-Pools-Machine-Traders-Rigging/dp/0307887189/ref=sr_1_1?dchild=1&keywords=dark+pools&qid=1607563590&s=books&sr=1-1" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Hands-On_Microservices_with_Spring_Boot_and_Spring_Cloud" class="book">
+      <img id="img_Hands-On_Microservices_with_Spring_Boot_and_Spring_Cloud" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/hands_on_microservices_with_spring_boot_and_spring_cloud.jpg" alt="Hands-On Microservices with Spring Boot and Spring Cloud">
+      <div class="back" onclick="" id="ondeck_Hands-On_Microservices_with_Spring_Boot_and_Spring_Cloud">
+        <div class="p0">
+          <span class="score"><span id="rating_Hands-On_Microservices_with_Spring_Boot_and_Spring_Cloud"></span></span>
+          <script>
+            var span = document.getElementById("rating_Hands-On_Microservices_with_Spring_Boot_and_Spring_Cloud");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Hands-On Microservices with Spring Boot and Spring Cloud</dd>
+            <dt>Author:</dt>
+            <dd>Magnus Larsson</dd>
+            <dt>Released:</dt>
+            <dd>September 20, 2019</dd>
+          </dl>
+          <p class="description">
+            Microservices architecture allows developers to build and maintain applications with ease, and enterprises are rapidly adopting it to build software...
+          </p>
+          <a href="https://www.amazon.com/Hands-Microservices-Spring-Boot-Cloud-dp-1789613477/dp/1789613477/ref=mt_paperback?_encoding=UTF8&me=&qid=" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Bad_Blood_-_Secrets_and_Lies_in_a_Silicon_Valley_Startup" class="book">
+      <img id="img_Bad_Blood_-_Secrets_and_Lies_in_a_Silicon_Valley_Startup" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/bad_blood.jpg" alt="Bad Blood - Secrets and Lies in a Silicon Valley Startup">
+      <div class="back" onclick="" id="ondeck_Bad_Blood_-_Secrets_and_Lies_in_a_Silicon_Valley_Startup">
+        <div class="p0">
+          <span class="score"><span id="rating_Bad_Blood_-_Secrets_and_Lies_in_a_Silicon_Valley_Startup"></span></span>
+          <script>
+            var span = document.getElementById("rating_Bad_Blood_-_Secrets_and_Lies_in_a_Silicon_Valley_Startup");
+            var rating = 4.8;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.8 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Bad Blood - Secrets and Lies in a Silicon Valley Startup</dd>
+            <dt>Author:</dt>
+            <dd>John Carreyrou</dd>
+            <dt>Released:</dt>
+            <dd>May 21, 2018</dd>
+          </dl>
+          <p class="description">
+            In Bad Blood, the Wall Street Journal’s John Carreyrou takes us through the step-by-step history of Theranos, a Silicon Valley...
+          </p>
+          <a href="https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Rework" class="book">
+      <img id="img_Rework" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/rework.jpg" alt="Rework">
+      <div class="back" onclick="" id="ondeck_Rework">
+        <div class="p0">
+          <span class="score"><span id="rating_Rework"></span></span>
+          <script>
+            var span = document.getElementById("rating_Rework");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Rework</dd>
+            <dt>Author:</dt>
+            <dd>Jason Fried & David H. Hansson</dd>
+            <dt>Released:</dt>
+            <dd>March 1, 2010</dd>
+          </dl>
+          <p class="description">
+            From the founders of the trailblazing software company 37signals, here is a different kind of business book - one that...
+          </p>
+          <a href="https://www.amazon.com/gp/product/0091929784/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=mainstringarg-20&linkId=1693b589692f8079daec45cc70036ebd&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="The_Signal_and_the_Noise" class="book">
+      <img id="img_The_Signal_and_the_Noise" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/the_signal_and_the_noise.jpg" alt="The Signal and the Noise">
+      <div class="back" onclick="" id="ondeck_The_Signal_and_the_Noise">
+        <div class="p0">
+          <span class="score"><span id="rating_The_Signal_and_the_Noise"></span></span>
+          <script>
+            var span = document.getElementById("rating_The_Signal_and_the_Noise");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>The Signal and the Noise</dd>
+            <dt>Author:</dt>
+            <dd>Nate Silver</dd>
+            <dt>Released:</dt>
+            <dd>February 3, 2015</dd>
+          </dl>
+          <p class="description">
+            Nate Silver built an innovative system for predicting baseball performance, predicted the 2008 election within a hair’s breadth, and became...
+          </p>
+          <a href="https://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087/ref=as_li_ss_tl?keywords=signal+in+the+noise&qid=1564153094&s=gateway&sr=8-1&linkCode=ll1&tag=mainstringarg-20&linkId=e417d09288a6cd3f65d565650e26660c&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Clean_Architecture" class="book">
+      <img id="img_Clean_Architecture" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/clean_architecture.jpg" alt="Clean Architecture">
+      <div class="back" onclick="" id="ondeck_Clean_Architecture">
+        <div class="p0">
+          <span class="score"><span id="rating_Clean_Architecture"></span></span>
+          <script>
+            var span = document.getElementById("rating_Clean_Architecture");
+            var rating = 4.3;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.3 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Clean Architecture</dd>
+            <dt>Author:</dt>
+            <dd>Robert C. Martin</dd>
+            <dt>Released:</dt>
+            <dd>September 20, 2017</dd>
+          </dl>
+          <p class="description">
+            By applying universal rules of software architecture, you can dramatically improve developer productivity throughout the life of any software system....
+          </p>
+          <a href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=as_li_ss_tl?crid=9YJ9X71LWCXD&keywords=clean+architecture&qid=1564690296&s=gateway&sprefix=clean+arh,aps,155&sr=8-1&linkCode=ll1&tag=mainstringarg-20&linkId=d660a50d6cae9d31db54a46b1367c79e&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Designing_Data-Intensive_Applications" class="book">
+      <img id="img_Designing_Data-Intensive_Applications" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/designing_data_intensive_applications.jpg" alt="Designing Data-Intensive Applications">
+      <div class="back" onclick="" id="ondeck_Designing_Data-Intensive_Applications">
+        <div class="p0">
+          <span class="score"><span id="rating_Designing_Data-Intensive_Applications"></span></span>
+          <script>
+            var span = document.getElementById("rating_Designing_Data-Intensive_Applications");
+            var rating = 4.7;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.7 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Designing Data-Intensive Applications</dd>
+            <dt>Author:</dt>
+            <dd>Martin Kleppmann</dd>
+            <dt>Released:</dt>
+            <dd>April 2, 2017</dd>
+          </dl>
+          <p class="description">
+            Data is at the center of many challenges in system design today. Difficult issues need to be figured out, such...
+          </p>
+          <a href="https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=as_li_ss_tl?crid=2J0BUT3XUW5BX&keywords=streaming+systems&qid=1561728107&s=books&sprefix=Streaming+Systems,stripbooks,156&sr=1-2&linkCode=ll1&tag=mainstringarg-20&linkId=f07f59f79a517afbf479cd3642e61c3a&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Einstein_-_His_Life_and_Universe" class="book">
+      <img id="img_Einstein_-_His_Life_and_Universe" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/einstein.jpg" alt="Einstein - His Life and Universe">
+      <div class="back" onclick="" id="ondeck_Einstein_-_His_Life_and_Universe">
+        <div class="p0">
+          <span class="score"><span id="rating_Einstein_-_His_Life_and_Universe"></span></span>
+          <script>
+            var span = document.getElementById("rating_Einstein_-_His_Life_and_Universe");
+            var rating = 4.6;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.6 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Einstein - His Life and Universe</dd>
+            <dt>Author:</dt>
+            <dd>Walter Isaacson</dd>
+            <dt>Released:</dt>
+            <dd>May 13, 2008</dd>
+          </dl>
+          <p class="description">
+            How did his mind work? What made him a genius? Isaacson’s biography shows how his scientific imagination sprang from the...
+          </p>
+          <a href="https://www.amazon.com/Einstein-Life-Universe-Walter-Isaacson/dp/0743264746/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=1041725672a5fe07e7e4999012ba805b&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Java_Concurrency_in_Practice" class="book">
+      <img id="img_Java_Concurrency_in_Practice" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/java_concurrency_in_practice.jpg" alt="Java Concurrency in Practice">
+      <div class="back" onclick="" id="ondeck_Java_Concurrency_in_Practice">
+        <div class="p0">
+          <span class="score"><span id="rating_Java_Concurrency_in_Practice"></span></span>
+          <script>
+            var span = document.getElementById("rating_Java_Concurrency_in_Practice");
+            var rating = 4.7;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.7 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Java Concurrency in Practice</dd>
+            <dt>Author:</dt>
+            <dd>Brian Goetz</dd>
+            <dt>Released:</dt>
+            <dd>April 16, 2019</dd>
+          </dl>
+          <p class="description">
+            Threads are a fundamental part of the Java platform. As multicore processors become the norm, using concurrency effectively becomes essential...
+          </p>
+          <a href="https://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601/ref=as_li_ss_tl?keywords=concurrency+java&qid=1564692259&s=books&sr=1-1&linkCode=ll1&tag=mainstringarg-20&linkId=7d3ec978c5bdf1337c777e80b2b40a71&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Trillion_Dollar_Coach" class="book">
+      <img id="img_Trillion_Dollar_Coach" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/trillion_dollar_coach.jpg" alt="Trillion Dollar Coach">
+      <div class="back" onclick="" id="ondeck_Trillion_Dollar_Coach">
+        <div class="p0">
+          <span class="score"><span id="rating_Trillion_Dollar_Coach"></span></span>
+          <script>
+            var span = document.getElementById("rating_Trillion_Dollar_Coach");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Trillion Dollar Coach</dd>
+            <dt>Author:</dt>
+            <dd>Eric Schmidt, Jon Rosenberg & Alan Eagle</dd>
+            <dt>Released:</dt>
+            <dd>April 16, 2019</dd>
+          </dl>
+          <p class="description">
+            Bill Campbell played an instrumental role in the growth of several prominent companies, such as Google, Apple, and Intuit, fostering...
+          </p>
+          <a href="https://www.amazon.com/Trillion-Dollar-Coach-Leadership-Playbook/dp/0062839268/ref=as_li_ss_tl?keywords=Trillion+Dollar+Coach&qid=1564691462&s=gateway&sr=8-3&linkCode=ll1&tag=mainstringarg-20&linkId=d13396708d127db2fe811b76d279d900&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Jony_Ive" class="book">
+      <img id="img_Jony_Ive" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/jony_ive.jpg" alt="Jony Ive">
+      <div class="back" onclick="" id="ondeck_Jony_Ive">
+        <div class="p0">
+          <span class="score"><span id="rating_Jony_Ive"></span></span>
+          <script>
+            var span = document.getElementById("rating_Jony_Ive");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Jony Ive</dd>
+            <dt>Author:</dt>
+            <dd>Leander Kahney</dd>
+            <dt>Released:</dt>
+            <dd>October 28, 2014</dd>
+          </dl>
+          <p class="description">
+            Leander Kahney offers a detailed portrait of the English art school student with dyslexia who became the most acclaimed tech...
+          </p>
+          <a href="https://www.amazon.com/Jony-Ive-Genius-Greatest-Products/dp/1591847060/ref=as_li_ss_tl?keywords=jony+ive&qid=1564692167&s=books&sr=1-1&linkCode=ll1&tag=mainstringarg-20&linkId=3344ed2d0bc52fc09f1b3f414ef38e01&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Principles" class="book">
+      <img id="img_Principles" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/principles.jpg" alt="Principles">
+      <div class="back" onclick="" id="ondeck_Principles">
+        <div class="p0">
+          <span class="score"><span id="rating_Principles"></span></span>
+          <script>
+            var span = document.getElementById("rating_Principles");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Principles</dd>
+            <dt>Author:</dt>
+            <dd>Ray Dalio</dd>
+            <dt>Released:</dt>
+            <dd>September 19, 2017</dd>
+          </dl>
+          <p class="description">
+            In 1975, Ray Dalio founded an investment firm, Bridgewater Associates, out of his two-bedroom apartment in New York City. Forty...
+          </p>
+          <a href="https://www.amazon.com/Principles-Life-Work-Ray-Dalio-ebook/dp/B071CTK28D/ref=as_li_ss_tl?keywords=tribe+of+mentors&qid=1564690282&s=gateway&sr=8-2-spons&psc=1&linkCode=ll1&tag=mainstringarg-20&linkId=30e6f9404360ee62cb70343743b43844&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Streaming_Systems" class="book">
+      <img id="img_Streaming_Systems" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/streaming_systems.jpg" alt="Streaming Systems">
+      <div class="back" onclick="" id="ondeck_Streaming_Systems">
+        <div class="p0">
+          <span class="score"><span id="rating_Streaming_Systems"></span></span>
+          <script>
+            var span = document.getElementById("rating_Streaming_Systems");
+            var rating = 4.5;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.5 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Streaming Systems</dd>
+            <dt>Author:</dt>
+            <dd>Tyler Akidau, Slava Chernyak & Reuven Lax</dd>
+            <dt>Released:</dt>
+            <dd>August 2, 2018</dd>
+          </dl>
+          <p class="description">
+            Streaming data is a big deal in big data these days. As more and more businesses seek to tame the...
+          </p>
+          <a href="https://www.amazon.com/Streaming-Systems-Where-Large-Scale-Processing/dp/1491983876/ref=as_li_ss_tl?keywords=Streaming+Systems&qid=1564691718&s=gateway&sr=8-2&linkCode=ll1&tag=mainstringarg-20&linkId=3976bbc20ed7fc47509f68ea58a53b19&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Clean_Code" class="book">
+      <img id="img_Clean_Code" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/clean_code.jpg" alt="Clean Code">
+      <div class="back" onclick="" id="ondeck_Clean_Code">
+        <div class="p0">
+          <span class="score"><span id="rating_Clean_Code"></span></span>
+          <script>
+            var span = document.getElementById("rating_Clean_Code");
+            var rating = 4.3;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.3 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Clean Code</dd>
+            <dt>Author:</dt>
+            <dd>Robert C. Martin</dd>
+            <dt>Released:</dt>
+            <dd>August 11, 2008</dd>
+          </dl>
+          <p class="description">
+            Best agile practices of cleaning code “on the fly” that will instill within you the values of a software craftsman...
+          </p>
+          <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=as_li_ss_tl?_encoding=UTF8&pd_rd_i=0132350882&pd_rd_r=779f34be-10b6-4da1-bee1-315e02822e8a&pd_rd_w=cbXpV&pd_rd_wg=7e0si&pf_rd_p=1c11b7ff-9ffb-4ba6-8036-be1b0afa79bb&pf_rd_r=5DNWQZ8VE6S37W6B11GZ&psc=1&refRID=5DNWQZ8VE6S37W6B11GZ&linkCode=ll1&tag=mainstringarg-20&linkId=c0c7bb9dde941f0956bbee5628952f98&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Weapons_of_Math_Destruction" class="book">
+      <img id="img_Weapons_of_Math_Destruction" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/weapons_of_math_destruction.jpg" alt="Weapons of Math Destruction">
+      <div class="back" onclick="" id="ondeck_Weapons_of_Math_Destruction">
+        <div class="p0">
+          <span class="score"><span id="rating_Weapons_of_Math_Destruction"></span></span>
+          <script>
+            var span = document.getElementById("rating_Weapons_of_Math_Destruction");
+            var rating = 4.1;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.1 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Weapons of Math Destruction</dd>
+            <dt>Author:</dt>
+            <dd>Cathy O'Neil</dd>
+            <dt>Released:</dt>
+            <dd>September 6, 2016</dd>
+          </dl>
+          <p class="description">
+            We live in the age of the algorithm. Increasingly, the decisions that affect our lives—where we go to school, whether...
+          </p>
+          <a href="https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=e04f1e235dca487c6ea2eaf6050243d1&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+    <li id="Microservices_in_Action" class="book">
+      <img id="img_Microservices_in_Action" draggable="true" ondragstart="drag(event)"  class="front" src="/bookshelf-data/assets/img/microservices_in_action.jpg" alt="Microservices in Action">
+      <div class="back" onclick="" id="ondeck_Microservices_in_Action">
+        <div class="p0">
+          <span class="score"><span id="rating_Microservices_in_Action"></span></span>
+          <script>
+            var span = document.getElementById("rating_Microservices_in_Action");
+            var rating = 4.4;
+            var starWidth = (span.offsetWidth - paddingLeft - (5*gapSize))/5.0;
+            var gaps = Math.floor(rating);
+            var width = (rating * starWidth) + (gaps * gapSize);
+            span.style.width = `${width}px`;
+            span.title=4.4 +" out of 5";
+          </script>
+          <dl class="p10">
+            <dt>Title:</dt>
+            <dd>Microservices in Action</dd>
+            <dt>Author:</dt>
+            <dd>Morgan Bruce & Paulo A. Pereira</dd>
+            <dt>Released:</dt>
+            <dd>November 5, 2018</dd>
+          </dl>
+          <p class="description">
+            Microservices in Action is a practical book about building and deploying microservice-based applications. Written for developers and architects with a...
+          </p>
+          <a href="https://www.amazon.com/Microservices-Action-Morgan-Bruce/dp/1617294454/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=mainstringarg-20&linkId=74fa14a366397e614b1f8916f01d2464&language=en_US" target="_blank">Amazon Link</a>
+        </div>
+      </div>
+    </li>
+    
+  </ul>
+
+</div>
+
+      </section>
+
+  </body>
