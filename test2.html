@@ -14,38 +14,53 @@
             <h1> My Shelf </h1>
          </div>
          <script>
-  const paddingLeft = 15;
-  const gapSize = 10;
-
-  function allowDrop(ev) {
-    ev.preventDefault();
-  }
-
-  function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-  }
-
-  function closest(elem) {
-    if (elem.className.indexOf("non-unique-identifier")) {
-      return elem;
-    }
-    var parent = elem.parentNode;
-    if (parent.className.indexOf("non-unique-identifier") != -1) {
-      return parent;
-    }
-    return closest(parent);
-  }
-
-  function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    console.log(ev.target)
-    //console.log(data);
-    //console.log(document.getElementById(data));
-    //console.log(document.getElementById(data).parentNode);
-    //var parent = document.getElementById(data).parentNode
-    ev.target.closest('ul').appendChild(document.getElementById(data).parentNode);
-  }
+            if (!Element.prototype.matches) {
+            Element.prototype.matches =
+            Element.prototype.msMatchesSelector ||
+            Element.prototype.webkitMatchesSelector;
+            }
+            
+            if (!Element.prototype.closest) {
+            Element.prototype.closest = function(s) {
+            var el = this;
+            
+            do {
+            if (Element.prototype.matches.call(el, s)) return el;
+            el = el.parentElement || el.parentNode;
+            } while (el !== null && el.nodeType === 1);
+            return null;
+            };
+            }
+            
+            
+            const paddingLeft = 15;
+            const gapSize = 10;
+            
+            function allowDrop(ev) {
+            ev.preventDefault();
+            }
+            
+            function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+            }
+            
+            function closest(elem) {
+            if (elem.className.indexOf(1)) {
+            return elem;
+            }
+            var parent = elem.parentNode;
+            if (parent.className.indexOf(1) != -1) {
+            return parent;
+            }
+            return closest(parent);
+            }
+            
+            function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            
+            ev.target.closest("ul").appendChild(document.getElementById(data).parentNode);
+            }
             
          </script>
          <div ondrop="drop(event)" ondragover="allowDrop(event)"  class="shelf read">
