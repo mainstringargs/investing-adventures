@@ -12,3 +12,10 @@
   image: modern_java_in_action.jpg
   amazon-rating: 4.5
   release-date: November 15, 2018
+- title: Humble Pi
+  author: Matt Parker
+  link: https://www.amazon.com/Humble-Pi-When-Wrong-World/dp/0593084683
+  description:  Our whole world is built on math, from the code running a website to the equations enabling the design of skyscrapers and bridges. Most of the time this math works quietly behind the scenes . . . until it doesn’t.
+  image: humble_pi.jpg
+  amazon-rating: 4.6
+  release-date: January 21, 2020
