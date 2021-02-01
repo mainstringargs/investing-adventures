@@ -243,3 +243,10 @@
   image: the_clean_coder.jpg
   amazon-rating: 4.3
   release-date: May 23, 2011
+- title: The Man Who Solved The Market
+  author: Gregory Zuckerman
+  link: https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X
+  description:  The unbelievable story of a secretive mathematician who pioneered the era of the algorithm & made $23 billion doing it.
+  image: the_man_who_solved_the_market.jpg
+  amazon-rating: 4.5
+  release-date: November 5, 2019
