@@ -12,3 +12,10 @@
   image: modern_java_in_action.jpg
   amazon-rating: 4.5
   release-date: November 15, 2018
+- title: Staff Engineer
+  author: Will Larson
+  link: https://www.amazon.com/Staff-Engineer-Leadership-beyond-management/dp/1736417916/ref=sr_1_2?dchild=1&keywords=staff+engineer&qid=1615836217&sr=8-2
+  description: At most technology companies, you'll reach Senior software engineer, the career level for software engineers, in five to eight years. At the career level, your company's career ladder won't require that you work towards the next promotion; being promoted further is an exception rather than expected.
+  image: staff_engineer.jpg
+  amazon-rating: 4.1
+  release-date: January 31, 2021
