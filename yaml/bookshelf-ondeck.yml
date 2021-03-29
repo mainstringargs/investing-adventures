@@ -110,13 +110,6 @@
   image: dark_pools.jpg
   amazon-rating: 4.6
   release-date: June 25, 2013
-- title: Dependency Injection
-  author: Mark Seemann
-  link: https://www.amazon.com/Dependency-Injection-Principles-Practices-Patterns/dp/161729473X/ref=sr_1_1_sspa?dchild=1&keywords=dependency+injection&qid=1611259916&s=books&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFKU0s1WE05WU1DTDYmZW5jcnlwdGVkSWQ9QTA4OTExMDQxSlpDWllSM0Q0RjY4JmVuY3J5cHRlZEFkSWQ9QTAyNzM4Njc5VDIxNVJMSEJLN0Qmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl
-  description: Dependency Injection Principles, Practices, and Patterns teaches you to use DI to reduce hard-coded dependencies between application components. You'll start by learning what DI is and what types of applications will benefit from it. 
-  amazon-rating: 4.8
-  image: dependency_injection.jpg
-  release-date: March 16, 2019
 - title: Head First Go
   author: Jay McGavren
   link: https://www.amazon.com/Head-First-Go-Jay-McGavren/dp/1491969555/ref=sr_1_1?dchild=1&keywords=head+first+go&qid=1611260025&s=books&sr=1-1
