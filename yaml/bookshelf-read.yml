@@ -264,3 +264,10 @@
   image: staff_engineer.jpg
   amazon-rating: 4.1
   release-date: January 31, 2021
+- title: Grokking Algorithms
+  author: Aditya Bhargava
+  link: https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230
+  description: Grokking Algorithms is a fully illustrated and friendly guide that teaches you how to apply common algorithms to the practical problems you face every day as a programmer.
+  image: grokking_algorithms.jpg
+  amazon-rating: 4.6
+  release-date: May 1, 2016
