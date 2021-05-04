@@ -1,10 +1,3 @@
-- title: Grokking Algorithms
-  author: Aditya Bhargava
-  link: https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230
-  description: Grokking Algorithms is a fully illustrated and friendly guide that teaches you how to apply common algorithms to the practical problems you face every day as a programmer.
-  image: grokking_algorithms.jpg
-  amazon-rating: 4.6
-  release-date: May 1, 2016
 - title: Modern Java in Action
   author: Raoul-Gabriel Urma
   link: https://www.amazon.com/Modern-Java-Action-Functional-Programming/dp/B08288LT6T
