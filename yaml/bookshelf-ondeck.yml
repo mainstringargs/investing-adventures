@@ -68,13 +68,6 @@
   amazon-rating: 4.7
   image: designing_data_intensive_applications.jpg
   release-date: April 2, 2017
-- title: Clean Architecture
-  author: Robert C. Martin
-  link: https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=as_li_ss_tl?crid=9YJ9X71LWCXD&keywords=clean+architecture&qid=1564690296&s=gateway&sprefix=clean+arh,aps,155&sr=8-1&linkCode=ll1&tag=mainstringarg-20&linkId=d660a50d6cae9d31db54a46b1367c79e&language=en_US
-  description: By applying universal rules of software architecture, you can dramatically improve developer productivity throughout the life of any software system.
-  image: clean_architecture.jpg
-  amazon-rating: 4.3
-  release-date: September 20, 2017
 - title: The Signal and the Noise
   author: Nate Silver
   link: https://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087/ref=as_li_ss_tl?keywords=signal+in+the+noise&qid=1564153094&s=gateway&sr=8-1&linkCode=ll1&tag=mainstringarg-20&linkId=e417d09288a6cd3f65d565650e26660c&language=en_US
