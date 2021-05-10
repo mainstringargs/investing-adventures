@@ -5,3 +5,17 @@
   image: modern_java_in_action.jpg
   amazon-rating: 4.5
   release-date: November 15, 2018
+- title: Clean Architecture
+  author: Robert C. Martin
+  link: https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=as_li_ss_tl?crid=9YJ9X71LWCXD&keywords=clean+architecture&qid=1564690296&s=gateway&sprefix=clean+arh,aps,155&sr=8-1&linkCode=ll1&tag=mainstringarg-20&linkId=d660a50d6cae9d31db54a46b1367c79e&language=en_US
+  description: By applying universal rules of software architecture, you can dramatically improve developer productivity throughout the life of any software system.
+  image: clean_architecture.jpg
+  amazon-rating: 4.3
+  release-date: September 20, 2017
+- title: A Common-Sense Guide to Data Structures and Algorithms
+  author: Jay Wengrow
+  link: https://www.amazon.com/gp/product/1680507222/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+  description: Algorithms and data structures are much more than abstract concepts. Mastering them enables you to write code that runs faster and more efficiently, which is particularly important for todays web and mobile apps.
+  image: a_common_sense_guide_to_data_structures_and_algorithms.jpg
+  amazon-rating: 4.9
+  release-date: September 1, 2020
