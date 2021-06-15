@@ -19,10 +19,3 @@
   image: the_unicorn_project.jpg
   amazon-rating: 4.6
   release-date: November 26, 2019
-- title: Fluent Python
-  author: Luciano Ramalho
-  link: https://www.amazon.com/gp/product/1491946008/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-  description: An experienced programmer may start writing useful Python code in a matter of hours. As the first productive hours become weeks and months, a lot of developers go on writing Python code with a very strong accent carried from languages learned before. 
-  image: fluent_python.jpg
-  amazon-rating: 4.6
-  release-date: September 1, 2015
