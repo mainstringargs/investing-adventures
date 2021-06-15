@@ -1,1 +1,1 @@
-# Data for bookshelf apps
+# Data Model for bookshelf apps
