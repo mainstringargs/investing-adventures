@@ -33,6 +33,13 @@
   image: principles.jpg
   amazon-rating: 4.4
   release-date: September 19, 2017
+- title: Fluent Python
+  author: Luciano Ramalho
+  link: https://www.amazon.com/gp/product/1491946008/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+  description: An experienced programmer may start writing useful Python code in a matter of hours. As the first productive hours become weeks and months, a lot of developers go on writing Python code with a very strong accent carried from languages learned before. 
+  image: fluent_python.jpg
+  amazon-rating: 4.6
+  release-date: September 1, 2015 
 - title: Jony Ive
   author: Leander Kahney
   link: https://www.amazon.com/Jony-Ive-Genius-Greatest-Products/dp/1591847060/ref=as_li_ss_tl?keywords=jony+ive&qid=1564692167&s=books&sr=1-1&linkCode=ll1&tag=mainstringarg-20&linkId=3344ed2d0bc52fc09f1b3f414ef38e01&language=en_US
