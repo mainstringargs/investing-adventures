@@ -113,7 +113,21 @@
 - title: Head First Go
   author: Jay McGavren
   link: https://www.amazon.com/Head-First-Go-Jay-McGavren/dp/1491969555/ref=sr_1_1?dchild=1&keywords=head+first+go&qid=1611260025&s=books&sr=1-1
-  description: Go makes it easy to build software that’s simple, reliable, and efficient. Andthis book makes it easy for programmers like you to get started. 
+  description: Go makes it easy to build software that’s simple, reliable, and efficient. And this book makes it easy for programmers like you to get started. 
   amazon-rating: 4.5
   image: head_first_go.jpg
   release-date: May 7, 2019
+- title: Ghost in the Wires
+  author: Kevin Mitnick
+  link: https://www.amazon.com/Ghost-Wires-Adventures-Worlds-Wanted/dp/0316037729
+  description: Kevin Mitnick was the most elusive computer break-in artist in history. He accessed computers and networks at the biggest companies and no matter how fast the authorities were, Mitnick was faster.
+  amazon-rating: 4.6
+  image: ghost_in_the_wires.jpg
+  release-date: April 24, 2012
+- title: Effective Python
+  author: Brett Slatkin
+  link: https://www.amazon.com/Effective-Python-Specific-Software-Development/dp/0134853989/ref=sr_1_1?dchild=1&keywords=effective+python&qid=1624282255&s=books&sr=1-1
+  description: It’s easy to start developing programs with Python, which is why the language is so popular. However, Python’s unique strengths, charms, and expressiveness can be hard to grasp, and there are hidden pitfalls that can easily trip you up.
+  amazon-rating: 4.7
+  image: effective_python.jpg
+  release-date: November 15, 2019
