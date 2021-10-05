@@ -1,14 +1,14 @@
-- title: Modern Java in Action
-  author: Raoul-Gabriel Urma
-  link: https://www.amazon.com/Modern-Java-Action-functional-programming/dp/1617293563
-  description: Modern Java in Action connects new features of the Java language with their practical applications. Using crystal-clear examples and careful attention to detail, this audiobook respects your time.
-  image: modern_java_in_action.jpg
-  amazon-rating: 4.5
-  release-date: November 15, 2018
-- title: A Common-Sense Guide to Data Structures and Algorithms
-  author: Jay Wengrow
-  link: https://www.amazon.com/gp/product/1680507222/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
-  description: The truth about algorithms and data structures is that everything about them boils down to common sense.
-  image: a_common_sense_guide_to_data_structures_and_algorithms.jpg
-  amazon-rating: 4.9
-  release-date: September 1, 2020
+- title: Head First Agile
+  author: Andrew Stellman & Jennifer Greene
+  link: https://www.amazon.com/Head-First-Agile-Brain-Friendly-Principles/dp/1449314333/ref=sr_1_1_sspa?dchild=1&keywords=head+first+agile&qid=1633441644&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVjczTzBCSFAxSkNRJmVuY3J5cHRlZElkPUEwMTY4NjUxMkY1NUhNMDI2RFZNUCZlbmNyeXB0ZWRBZElkPUEwMjA4MzAxM0tYNDVTM1pSTkxRNyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=
+  description: Agile is growing faster every day, all across the world--and for good reason. The tools, techniques, practices, and ideas behind the most popular agile methods and frameworks have revolutionized the way that people on teams work.
+  image: head_first_agile.jpg
+  amazon-rating: 4.6
+  release-date: October 10, 2017
+- title: Chaos Monkeys
+  author: Antonio Garcia Martinez
+  link: https://www.amazon.com/Chaos-Monkeys-Obscene-Fortune-Failure-ebook/dp/B07C7DM72N/ref=sr_1_2?dchild=1&keywords=chaos+facebook&qid=1633442085&sr=8-2
+  description: Imagine a chimpanzee rampaging through a data center powering everything from Google to Facebook. Infrastructure engineers use a software version of this 'chaos monkey' to test online services' robustness--their ability to survive random failure and correct mistakes before they actually occur. 
+  image: chaos_monkeys.jpg
+  amazon-rating: 4.2
+  release-date: July 24, 2018
