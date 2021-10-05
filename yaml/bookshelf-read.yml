@@ -285,3 +285,17 @@
   image: the_unicorn_project.jpg
   amazon-rating: 4.6
   release-date: November 26, 2019
+- title: Modern Java in Action
+  author: Raoul-Gabriel Urma
+  link: https://www.amazon.com/Modern-Java-Action-functional-programming/dp/1617293563
+  description: Modern Java in Action connects new features of the Java language with their practical applications. Using crystal-clear examples and careful attention to detail, this audiobook respects your time.
+  image: modern_java_in_action.jpg
+  amazon-rating: 4.5
+  release-date: November 15, 2018
+- title: A Common-Sense Guide to Data Structures and Algorithms
+  author: Jay Wengrow
+  link: https://www.amazon.com/gp/product/1680507222/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+  description: The truth about algorithms and data structures is that everything about them boils down to common sense.
+  image: a_common_sense_guide_to_data_structures_and_algorithms.jpg
+  amazon-rating: 4.9
+  release-date: September 1, 2020
