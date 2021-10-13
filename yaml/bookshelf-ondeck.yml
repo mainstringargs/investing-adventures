@@ -131,10 +131,10 @@
   amazon-rating: 4.7
   image: effective_python.jpg
   release-date: November 15, 2019
-- title: Clean Agile
-  author: Robert C. Martin
-  link: https://www.amazon.com/Clean-Agile-Basics-Robert-Martin/dp/0135781868?ref_=ast_slp_dp
-  description: Nearly twenty years after the Agile Manifesto was first presented, the legendary Robert C. Martin reintroduces Agile values and principles for a new generation–programmers and nonprogrammers alike.
-  amazon-rating: 4.7
-  image: clean_agile.jpg
-  release-date: October 17, 2019
+- title: Head First Agile
+  author: Andrew Stellman & Jennifer Greene
+  link: https://www.amazon.com/Head-First-Agile-Brain-Friendly-Principles/dp/1449314333/ref=sr_1_1_sspa?dchild=1&keywords=head+first+agile&qid=1633441644&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVjczTzBCSFAxSkNRJmVuY3J5cHRlZElkPUEwMTY4NjUxMkY1NUhNMDI2RFZNUCZlbmNyeXB0ZWRBZElkPUEwMjA4MzAxM0tYNDVTM1pSTkxRNyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=
+  description: Agile is growing faster every day, all across the world--and for good reason. The tools, techniques, practices, and ideas behind the most popular agile methods and frameworks have revolutionized the way that people on teams work.
+  image: head_first_agile.jpg
+  amazon-rating: 4.6
+  release-date: October 10, 2017
