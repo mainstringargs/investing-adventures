@@ -117,13 +117,6 @@
   amazon-rating: 4.5
   image: head_first_go.jpg
   release-date: May 7, 2019
-- title: Ghost in the Wires
-  author: Kevin Mitnick
-  link: https://www.amazon.com/Ghost-Wires-Adventures-Worlds-Wanted/dp/0316037729
-  description: Kevin Mitnick was the most elusive computer break-in artist in history. He accessed computers and networks at the biggest companies and no matter how fast the authorities were, Mitnick was faster.
-  amazon-rating: 4.6
-  image: ghost_in_the_wires.jpg
-  release-date: April 24, 2012
 - title: Effective Python
   author: Brett Slatkin
   link: https://www.amazon.com/Effective-Python-Specific-Software-Development/dp/0134853989/ref=sr_1_1?dchild=1&keywords=effective+python&qid=1624282255&s=books&sr=1-1
