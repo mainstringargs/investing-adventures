@@ -5,10 +5,10 @@
   amazon-rating: 4.7
   image: clean_agile.jpg
   release-date: October 17, 2019
-- title: Chaos Monkeys
-  author: Antonio Garcia Martinez
-  link: https://www.amazon.com/Chaos-Monkeys-Obscene-Fortune-Failure-ebook/dp/B07C7DM72N/ref=sr_1_2?dchild=1&keywords=chaos+facebook&qid=1633442085&sr=8-2
-  description: Imagine a chimpanzee rampaging through a data center powering everything from Google to Facebook. Infrastructure engineers use a software version of this 'chaos monkey' to test online services' robustness--their ability to survive random failure and correct mistakes before they actually occur. 
-  image: chaos_monkeys.jpg
-  amazon-rating: 4.2
-  release-date: July 24, 2018
+- title: Ghost in the Wires
+  author: Kevin Mitnick
+  link: https://www.amazon.com/Ghost-Wires-Adventures-Worlds-Wanted/dp/0316037729
+  description: Kevin Mitnick was the most elusive computer break-in artist in history. He accessed computers and networks at the biggest companies and no matter how fast the authorities were, Mitnick was faster.
+  amazon-rating: 4.6
+  image: ghost_in_the_wires.jpg
+  release-date: April 24, 2012
