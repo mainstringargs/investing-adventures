@@ -306,3 +306,10 @@
   image: chaos_monkeys.jpg
   amazon-rating: 4.2
   release-date: July 24, 2018
+- title: Ghost in the Wires
+  author: Kevin Mitnick
+  link: https://www.amazon.com/Ghost-Wires-Adventures-Worlds-Wanted/dp/0316037729
+  description: Kevin Mitnick was the most elusive computer break-in artist in history. He accessed computers and networks at the biggest companies and no matter how fast the authorities were, Mitnick was faster.
+  amazon-rating: 4.6
+  image: ghost_in_the_wires.jpg
+  release-date: April 24, 2012
