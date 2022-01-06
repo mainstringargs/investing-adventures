@@ -68,13 +68,6 @@
   amazon-rating: 4.6
   image: einstein.jpg
   release-date: May 13, 2008
-- title: Designing Data-Intensive Applications
-  author: Martin Kleppmann
-  link: https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=as_li_ss_tl?crid=2J0BUT3XUW5BX&keywords=streaming+systems&qid=1561728107&s=books&sprefix=Streaming+Systems,stripbooks,156&sr=1-2&linkCode=ll1&tag=mainstringarg-20&linkId=f07f59f79a517afbf479cd3642e61c3a&language=en_US
-  description: Data is at the center of many challenges in system design today. Difficult issues need to be figured out, such as scalability, consistency, reliability, efficiency, and maintainability. In addition, we have an overwhelming variety of tools, including relational databases, NoSQL datastores, stream or batch processors, and message brokers. What are the right choices for your application?
-  amazon-rating: 4.7
-  image: designing_data_intensive_applications.jpg
-  release-date: April 2, 2017
 - title: The Signal and the Noise
   author: Nate Silver
   link: https://www.amazon.com/Signal-Noise-Many-Predictions-Fail-but/dp/0143125087/ref=as_li_ss_tl?keywords=signal+in+the+noise&qid=1564153094&s=gateway&sr=8-1&linkCode=ll1&tag=mainstringarg-20&linkId=e417d09288a6cd3f65d565650e26660c&language=en_US
