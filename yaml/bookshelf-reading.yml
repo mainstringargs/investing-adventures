@@ -5,13 +5,6 @@
   amazon-rating: 4.7
   image: clean_agile.jpg
   release-date: October 17, 2019
-- title: The Drunkard's Walk
-  author: Leonard Mlodinow
-  link: https://www.amazon.com/Drunkards-Walk-Randomness-Rules-Lives/dp/0307275175
-  description: By showing us the true nature of chance and revealing the psychological illusions that cause us to misjudge the world around us, Mlodinow gives us the tools we need to make more informed decisions. 
-  amazon-rating: 4.5
-  image: the_drunkards_walk.jpg
-  release-date: May 5, 2009
 - title: Designing Data-Intensive Applications
   author: Martin Kleppmann
   link: https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=as_li_ss_tl?crid=2J0BUT3XUW5BX&keywords=streaming+systems&qid=1561728107&s=books&sprefix=Streaming+Systems,stripbooks,156&sr=1-2&linkCode=ll1&tag=mainstringarg-20&linkId=f07f59f79a517afbf479cd3642e61c3a&language=en_US
@@ -19,3 +12,10 @@
   amazon-rating: 4.7
   image: designing_data_intensive_applications.jpg
   release-date: April 2, 2017
+- title: Masters of Doom
+  author: David Kushner
+  link: https://www.amazon.com/Masters-Doom-Created-Transformed-Culture/dp/0812972155
+  description:  The amazing true story of the Lennon and McCartney of video games: John Carmack and John Romero. Together, they ruled big business. 
+  amazon-rating: 4.7
+  image: masters_of_doom.jpg
+  release-date: May 11, 2004
