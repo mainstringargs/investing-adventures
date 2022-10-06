@@ -1,6 +1,8 @@
 - name: Fundrise
   referral-link: https://fundrise.com/r/oyvlp
   normal-link: https://fundrise.com
+  referral-perk:  
+  opinion:
   description: Fundrise is the first online investment platform to create a simple way for anyone to unlock the previously exclusive world of private real estate. 
   rank: 1
   image: https://d10cq78zmnjvsx.cloudfront.net/interface/logo-hz-color.svg
@@ -11,8 +13,10 @@
   date-initiated: 9/29/2021
   date-updated: 10/6/2022
 - name: Betterment
-  referral-link: https://fundrise.com/r/oyvlp
-  normal-link: https://fundrise.com
+  referral-link: https://www.wealthfront.com/c/affiliates/invited/AFFD-SYS5-DVXX-7UEV
+  normal-link: https://www.betterment.com/
+  referral-perk:
+  opinion:
   description: Fundrise is the first online investment platform to create a simple way for anyone to unlock the previously exclusive world of private real estate. 
   rank: 1
   image: https://d10cq78zmnjvsx.cloudfront.net/interface/logo-hz-color.svg
@@ -24,7 +28,8 @@
   date-updated: 10/6/2022
 - name: Wealthfront
   referral-link: https://fundrise.com/r/oyvlp
-  normal-link: https://fundrise.com
+  referral-perk: $5k managed for free, for life  
+  normal-link: https://www.wealthfront.com/
   description: Fundrise is the first online investment platform to create a simple way for anyone to unlock the previously exclusive world of private real estate. 
   rank: 1
   image: https://d10cq78zmnjvsx.cloudfront.net/interface/logo-hz-color.svg
@@ -35,8 +40,10 @@
   date-initiated: 9/29/2021
   date-updated: 10/6/2022
 - name: Titan
-  referral-link: https://fundrise.com/r/oyvlp
-  normal-link: https://fundrise.com
+  referral-link: https://www.titanvest.com/?r=ab96a3b4-01f3-4074-af69-0d73afa77a5e
+  normal-link: https://www.titan.com/
+  referral-perk: 100 day free trial
+  opinion:   
   description: Fundrise is the first online investment platform to create a simple way for anyone to unlock the previously exclusive world of private real estate. 
   rank: 1
   image: https://d10cq78zmnjvsx.cloudfront.net/interface/logo-hz-color.svg
