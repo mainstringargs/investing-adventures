@@ -1,3 +1,2 @@
-# Data Model for bookshelf apps
+# My Investing Adventures
 
-See the yaml folder for the relevant yaml for read, reading, and on deck.
