@@ -13,9 +13,9 @@
   date-initiated: 9/29/2021
   date-updated: 10/6/2022
 - name: Betterment
-  referral-link: https://www.wealthfront.com/c/affiliates/invited/AFFD-SYS5-DVXX-7UEV
+  referral-link: https://www.betterment.com/friend-referral-offer?referral_key=danacloutier
   normal-link: https://www.betterment.com/
-  referral-perk:
+  referral-perk: $5K in assets managed free
   opinion:
   description: Fundrise is the first online investment platform to create a simple way for anyone to unlock the previously exclusive world of private real estate. 
   rank: 1
@@ -54,8 +54,9 @@
   date-initiated: 9/29/2021
   date-updated: 10/6/2022  
 - name: M1 Finance
-  referral-link: https://fundrise.com/r/oyvlp
-  normal-link: https://fundrise.com
+  referral-link: https://m1.finance/-HpW0oMZAgq4
+  normal-link: https://m1.com/
+  referral-perk: $10 to invest with
   description: Fundrise is the first online investment platform to create a simple way for anyone to unlock the previously exclusive world of private real estate. 
   rank: 1
   image: https://d10cq78zmnjvsx.cloudfront.net/interface/logo-hz-color.svg
@@ -66,7 +67,7 @@
   date-initiated: 9/29/2021
   date-updated: 10/6/2022    
 - name: Diversy Fund
-  referral-link: https://fundrise.com/r/oyvlp
+  referral-link: 
   normal-link: https://diversyfund.com/
   description: Fundrise is the first online investment platform to create a simple way for anyone to unlock the previously exclusive world of private real estate. 
   rank: 1
